@@ -8,7 +8,6 @@
 - **Modular Architecture**: Portions of the logic are separated into a reusable `ggrep` package.
 - **Full Grep Support**: Supports standard flags including ignore-case, invert-match, line-numbers, recursive search, and more.
 - **Colorized Output**: High-visibility output for terminal users.
-- **CI/CD Integrated**: Automated testing and releases via GitHub Actions.
 
 ## Installation
 
@@ -51,21 +50,6 @@ Case-insensitive search for a pattern in a specific file:
 ggrep -i "pattern" main.go
 ```
 
-## Project Structure
-
-- `main.go`: Entry point for the CLI application.
-- `pkg/ggrep/`: Core package containing configuration, search logic, and type definitions.
-- `tests/`: Comprehensive test suite for search functionality.
-- `.github/workflows/`: CI/CD pipelines for automated testing and releases.
-
-## Development
-
-### Running Tests
-
-```bash
-go test -v ./...
-```
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
